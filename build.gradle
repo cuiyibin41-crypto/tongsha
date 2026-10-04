@@ -5,7 +5,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.android.tools.build:gradle:8.1.4'
     }
 }
 
@@ -13,7 +13,6 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        // Xposed API 仓库（部分版本需要）
         maven { url 'https://api.xposed.info/' }
     }
 }
