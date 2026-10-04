@@ -1,0 +1,3 @@
+rootProject.name = "AdKiller"
+include ':app'
+include ':xposed-api-stub'
