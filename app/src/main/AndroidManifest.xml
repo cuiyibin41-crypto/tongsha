@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:label="广告联盟通杀"
-        android:icon="@mipmap/ic_launcher">
+        android:label="广告联盟通杀">
 
         <meta-data android:name="xposedmodule" android:value="true" />
         <meta-data android:name="xposeddescription"
