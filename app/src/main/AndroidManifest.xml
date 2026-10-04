@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:label="AdKiller 广告奖励放大器"
+        android:allowBackup="true"
+        android:theme="@android:style/Theme.Material.Light.DarkActionBar">
+
+        <meta-data android:name="xposedmodule" android:value="true" />
+        <meta-data android:name="xposeddescription"
+            android:value="四大广告联盟通杀：放大广告 eCPM 提高奖励" />
+        <meta-data android:name="xposedminversion" android:value="54" />
+
+        <activity
+            android:name="com.adkiller.MainActivity"
+            android:label="AdKiller 广告奖励放大器"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
