@@ -1,0 +1,10 @@
+plugins { id 'java-library' }
+
+// 纯 Java 库：只提供编译期桩类，不会打包进 APK
+targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
