@@ -3,7 +3,8 @@
 
     <application
         android:label="广告奖励放大器"
-        android:allowBackup="true">
+        android:allowBackup="true"
+        android:theme="@android:style/Theme.Material.Light.DarkActionBar">
 
         <!-- Xposed 模块标记 -->
         <meta-data android:name="xposedmodule" android:value="true" />
