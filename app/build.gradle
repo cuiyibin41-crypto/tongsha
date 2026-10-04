@@ -30,5 +30,4 @@ android {
 dependencies {
     // Xposed API：仅编译时用，不打包进 APK
     compileOnly 'de.robv.android.xposed:api:82'
-    compileOnly 'de.robv.android.xposed:api:82:sources'
 }
