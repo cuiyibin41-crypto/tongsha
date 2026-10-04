@@ -31,8 +31,19 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle b) {
         super.onCreate(b);
-        sp = Prefs.sp(this);
+        try {
+            buildUi();
+        } catch (Throwable t) {
+            // 崩溃时显示原因，而不是直接闪退
+            TextView tv = new TextView(this);
+            tv.setPadding(32, 32, 32, 32);
+            tv.setTextSize(14);
+            tv.setText("页面构建失败：\n" + t + "\n\n" + android.util.Log.getStackTraceString(t));
+            setContentView(tv);
+        }
+    }
 
+    private void buildUi() {
         LinearLayout root = new LinearLayout(this);
         root.setOrientation(LinearLayout.VERTICAL);
         root.setPadding(48, 64, 48, 48);
